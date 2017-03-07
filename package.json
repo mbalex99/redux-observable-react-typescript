@@ -35,6 +35,7 @@
     "webpack-dev-server": "^2.4.1"
   },
   "scripts": {
+    "postinstall": "npm run build:dev",
     "watch:dev": "./node_modules/.bin/webpack-dev-server --config ./config/base.js",
     "build:dev": "./node_modules/.bin/webpack --config ./config/base.js",
     "test": "echo \"Error: no test specified\" && exit 1"
